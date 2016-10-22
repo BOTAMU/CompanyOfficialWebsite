@@ -1,0 +1,408 @@
+/*****************公共样式*****************/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+
+input {
+    font-family: "微软雅黑";
+    font-weight: normal;
+    outline: 0 none;
+}
+a{
+    font-family: "微软雅黑";
+    text-decoration: none;
+    color: #444;
+    overflow: hidden;
+}
+ul,li{
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+}
+img{vertical-align: top; border: 0 none;}
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+.title_bg{
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10px;
+    background: url("../images/title_bg.jpg") repeat-x;
+}
+.title_bg h2 a{
+    color: #444;
+    font-size: 18px;
+}
+
+/**************头部样式************/
+div#logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+div#sousuo {
+    display: inline-block;
+    margin-left: 208px;
+}
+
+input[type="text"] {
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    padding-left: 10px;
+    width: 165px;
+    vertical-align: top;
+    display: inline-block;
+    color: #666;
+}
+
+input[type="text"]:focus {border: 1px solid #3598db;}
+
+input[type="submit"] {
+    background-color: #3598db;
+    color: #fff;
+    border: 1px solid #3598db;
+    height: 42px;
+    line-height: 40px;
+    padding: 0 10px;
+    font-size: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+div#nav{background-color: #3598db; height: 60px;}
+div#nav nav li{
+    line-height: 57px;
+    padding: 0 5px;
+    border-right: 1px solid #2f89c5;
+    transition: background-color 1s linear;
+    -o-transition: background-color 1s linear;
+    -ms-transition: background-color 1s linear;
+    -moz-transition: background-color 1s linear;
+    -webkit-transition: background-color 1s linear;
+}
+div#nav nav li:last-child{padding-right: 4px;}
+div#nav nav li.on,div#nav nav li:hover{background-color: #2f89c5;}
+div#nav nav li a{
+    color: #fff;
+    font-size: 20px;
+}
+/*****************内容主题样式**************/
+#body_wrapper{margin-top: 20px;}
+/**控制左右的大小*/
+div#body_wrapper article{
+    width: 628px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+div#body_wrapper aside{
+    display: inline-block;
+    width: 352px;
+    /*height: 500px;*/
+    /*background-color: #3598db;*/
+    vertical-align: top;
+}
+
+/*******************轮播图*******************/
+section#bannerOne{box-shadow: 1px 5px 30px #a39f9f;}
+div.wrap a{color:#fff;}
+div#slide-holder {
+    width : 628px;
+    height : 278px;
+}
+div#slide-runner {
+    width : 628px;
+    height : 278px;
+    overflow : hidden;
+    position : absolute;
+}
+div#slide-holder img {
+    margin : 0;
+    display : none;
+    position : absolute;
+}
+div#slide-controls {
+    left : 0;
+    bottom : 0;
+    width : 628px;
+    height : 46px;
+    display : none;
+    position : absolute;
+    background: rgb(0, 0, 0);    /*不支持rgba的浏览器*/
+    background: rgba(0,0,0,.5);  /*支持rgba的浏览器*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);    /*IE8支持*/
+}
+div#slide-controls p.text {
+    float : left;
+    color : #fff;
+    display : inline;
+    font-size : 18px;
+    line-height : 16px;
+    margin : 15px 0 0 20px;
+    text-transform : uppercase;
+}
+p#slide-nav {
+    float : right;
+    height : 24px;
+    display : inline;
+    margin : 11px 15px 0 0;
+}
+p#slide-nav a {
+    float : left;
+    width : 24px;
+    height : 24px;
+    display : inline;
+    font-size : 11px;
+    margin : 0 5px 0 0;
+    line-height : 24px;
+    font-weight : bold;
+    text-align : center;
+    text-decoration : none;
+    background-position : 0 0;
+    background-repeat : no-repeat;
+}
+p#slide-nav a.on {
+    background-position : 0 -24px;
+}
+p#slide-nav a {
+    background-image : url(../images/silde-nav.png);
+}
+/************新闻部分***************/
+section#constitution_news{margin-top: 20px;}
+section#constitution_news li{
+    width: 100%;
+    vertical-align: bottom;
+    margin-top: 10px;
+}
+section#constitution_news li a{
+    display: inline-block;
+    vertical-align: top;
+    height: 165px;
+}
+section#constitution_news li img{width: 315px; height: 165px;}
+section#constitution_news li a.ms{
+    width: 313px;
+    background-color: #3598db;
+    padding: 10px;
+/*设置内补白(W3C及兼容写法)防止掉下*/
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: relative;
+}
+section#constitution_news li a.ms h3{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 5px;
+    height: 30px;
+    width: 288px;
+    overflow: hidden;/*文字多了就去掉*/
+}
+section#constitution_news li a.ms p{
+    color: #dcdcde;
+    text-indent: 32px;
+    height: 105px;
+    overflow: hidden;
+}
+.sjx{
+    width: 20px;
+    height: 20px;
+    background-color: #3598db;
+    position: absolute;
+    top: 19px;
+    left: -11px;
+    /*方块旋转兼容性写法*/
+    transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+/******活动******/
+section#unionActive{margin-top: 20px;}
+section#unionActive_a{margin-top: 10px;}
+section#unionActive_a li{
+    vertical-align: top;
+    margin-right: 9px;
+}
+section#unionActive_a li:last-child{margin-right: 0;}
+section#unionActive_a li img{width: 150px; height: 150px;}
+section#unionActive_b{
+    width: 469px;
+    display: inline-block;
+    vertical-align: top;
+}
+section#unionActive_b li:before{
+    content: counter(xuHao);
+    background-color: #444;
+    padding: 2px 5px;
+    color: #fff;
+    margin-right: 5px;
+}
+section#unionActive_b li{
+    counter-increment: xuHao;
+    width: 469px;
+    vertical-align: bottom;
+    overflow: hidden;/*超出隐藏*/
+    white-space: nowrap;/*不换行*/
+    text-overflow: ellipsis;/*超出用‘...’方式代替*/
+    margin-top: 16px;
+
+    /*运动兼容性*/
+    transition: text-shadow 1s linear;
+    -o-transition: text-shadow 1s linear;
+    -ms-transition: text-shadow 1s linear;
+    -moz-transition: text-shadow 1s linear;
+    -webkit-transition: text-shadow 1s linear;
+}
+section#unionActive_b li:first-child:before,section#unionActive_b li:nth-child(2):before,section#unionActive_b li:nth-child(3):before{background-color: #3598db;}
+section#unionActive_b li:last-child:before{
+    padding: 2px;
+    font-size: 14px;
+}
+section#unionActive_b li:hover{text-shadow: 1px 4px 4px #000;}
+
+section#unionActive_c{
+    width: 150px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left:8px;
+}
+section#unionActive_c li{width: 150px; margin-top: 10px;}
+section#unionActive_c li:first-child,section#unionActive_c li:last-child img{height: 205px;}
+section#unionActive_c li:last-child,section#unionActive_c li:last-child img{height: 150px;}
+section#unionActive_c li img{width: 150px;}
+
+/*右边*/
+section#bowen_a{margin-top: 10px; vertical-align: top;}
+section#bowen_a li{width: 172px; text-align: center;}
+section#bowen_a li:first-child{margin-right: 8px;}
+section#bowen_a li a{display: inline-block;}
+section#bowen_a li a:first-child{width: 172px; height: 111px;}
+section#bowen_a li a:last-child{height: 22px;}
+
+section#bowen_b{width: 352px; border-top: 1px solid #ccc;}
+section#bowen_b li:before{
+    content: counter(xuHao);
+    background-color: #3598db;
+    padding: 0 4px;
+    color: #fff;
+    margin-right: 5px;
+}
+section#bowen_b li{
+    counter-increment: xuHao;
+    width: 352px;
+    vertical-align: bottom;
+    overflow: hidden;/*超出隐藏*/
+    white-space: nowrap;/*不换行*/
+    text-overflow: ellipsis;/*超出用‘...’方式代替*/
+    margin-top: 8px;
+    font-size: 14px;
+    /*运动兼容性*/
+    transition: text-shadow 1s linear;
+    -o-transition: text-shadow 1s linear;
+    -ms-transition: text-shadow 1s linear;
+    -moz-transition: text-shadow 1s linear;
+    -webkit-transition: text-shadow 1s linear;
+}
+section#bowen_b li:hover{text-shadow: 1px 4px 4px #000;}
+/*联盟招聘*/
+section#recruit {margin-top: 15px;}
+section#recruit li:before{
+    content: counter(xuHao);
+    background-color: #3598db;
+    padding: 0 4px;
+    color: #fff;
+    margin-right: 5px;
+}
+section#recruit li{
+    counter-increment: xuHao;
+    width: 352px;
+    vertical-align: bottom;
+    overflow: hidden;/*超出隐藏*/
+    white-space: nowrap;/*不换行*/
+    text-overflow: ellipsis;/*超出用‘...’方式代替*/
+    margin-top: 14px;
+    font-size: 14px;
+
+    /*运动兼容性*/
+    transition: text-shadow 1s linear;
+    -o-transition: text-shadow 1s linear;
+    -ms-transition: text-shadow 1s linear;
+    -moz-transition: text-shadow 1s linear;
+    -webkit-transition: text-shadow 1s linear;
+}
+section#recruit li:hover{text-shadow: 1px 4px 4px #000;}
+section#recruit li:last-child:before{
+    padding: 0;
+    font-size: 14px;
+}
+/*联系我们*/
+section#contactUs{margin-top: 15px;}
+section#contactUs a,section#contactUs img{
+    display: inline-block;
+    width: 352px;
+    height: 199px;
+}
+
+/*联盟会员介绍*/
+section#introduce{margin-top: 15px;}
+section#introduce li{
+    width: 100%;
+    vertical-align: top;
+    margin-top: 10px;
+}
+section#introduce h4{
+    font-size: 16px;
+    height: 28px;
+    line-height: 28px;
+}
+.zgsInfo{
+    /*运动兼容性*/
+    transition: padding 0.5s linear;
+    -o-transition: padding 0.5s linear;
+    -ms-transition: padding 0.5s linear;
+    -moz-transition: padding 0.5s linear;
+    -webkit-transition: padding 0.5s linear;
+}
+.zgsInfo:hover{
+    border: 1px solid #3598db;
+    padding: 10px 0;
+}
+.zgsInfo a{
+    display: inline-block;
+    vertical-align: top;
+}
+.zgsInfo a:first-child{width: 170px;}
+.zgsInfo a:last-child{
+    width: 175px;
+    font-size: 12px;
+    height: 50px;
+}
+/*页脚*/
+#footer_wrapper{
+    background-color: #3598db;
+    margin-top: 20px;
+    padding: 40px 0;
+}
+#footer_wrapper footer{text-align: center;}
+#footer_wrapper footer li{
+    border-right: 1px solid #fff;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+#footer_wrapper footer li:last-child{border: 0 none;}
+#footer_wrapper footer li a{color: #fff;}
+#footer_wrapper footer p{color: #fff; margin-top: 10px;}
